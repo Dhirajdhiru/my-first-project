@@ -1,0 +1,281 @@
+:root {
+  --primary: #ff6b6b;
+  --secondary: #2d2e32;
+  --light: #f7f7fb;
+  --accent: #ffd166;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.site-header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  gap: 2rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn,
+.ghost-btn {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: #fff;
+}
+
+.ghost-btn {
+  background: var(--light);
+  color: var(--secondary);
+}
+
+.primary-btn:hover,
+.ghost-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 4rem 2rem;
+  background: linear-gradient(135deg, #fff4f4, #fff8ea);
+}
+
+.hero-content .tag {
+  background: var(--accent);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timer {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer div {
+  background: var(--light);
+  padding: 0.8rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.timer span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.section {
+  padding: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.categories {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 18px;
+}
+
+.products {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.product-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.product-card .badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: var(--accent);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.price span {
+  color: #9b9b9b;
+  text-decoration: line-through;
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
+}
+
+.offer {
+  background: var(--secondary);
+  color: #fff;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+}
+
+.offer-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.offer-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.2rem;
+  border-radius: 16px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  min-width: 240px;
+}
+
+.site-footer {
+  background: var(--light);
+  padding: 3rem 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.site-footer ul {
+  list-style: none;
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .hero,
+  .section,
+  .site-footer {
+    padding: 3rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
