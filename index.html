@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopNova | आपका ऑनलाइन स्टोर</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">ShopNova</div>
+      <ul class="nav-links">
+        <li><a href="#home">होम</a></li>
+        <li><a href="#categories">कैटेगरी</a></li>
+        <li><a href="#products">प्रोडक्ट्स</a></li>
+        <li><a href="#offers">ऑफर्स</a></li>
+        <li><a href="#contact">संपर्क</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="ghost-btn">लॉगिन</button>
+        <button class="primary-btn">कार्ट (2)</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">नया सीज़न, नई डील्स</p>
+        <h1>हर दिन सुपर सेल के साथ स्मार्ट शॉपिंग करें</h1>
+        <p>
+          10,000+ ट्रेंडिंग प्रोडक्ट्स, 24x7 सपोर्ट और 1 दिन में डिलीवरी।
+          अपनी पसंद की हर चीज़ एक ही जगह पर.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn">अभी खरीदें</button>
+          <button class="ghost-btn">कैटलॉग देखें</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <h3>4.9★</h3>
+            <span>रेटिंग</span>
+          </div>
+          <div>
+            <h3>150K+</h3>
+            <span>खुश ग्राहक</span>
+          </div>
+          <div>
+            <h3>1 दिन</h3>
+            <span>तेज़ डिलीवरी</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>फ्लैश सेल</h3>
+        <p>स्मार्टफोन्स पर 35% तक की छूट</p>
+        <div class="timer" id="timer">
+          <div><span id="hours">06</span><small>घंटे</small></div>
+          <div><span id="minutes">24</span><small>मिनट</small></div>
+          <div><span id="seconds">45</span><small>सेकंड</small></div>
+        </div>
+        <button class="primary-btn">डील क्लेम करें</button>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-title">
+        <h2>लोकप्रिय कैटेगरी</h2>
+        <p>हर जरूरत के लिए नई और ट्रेंडिंग कैटेगरीज़।</p>
+      </div>
+      <div class="grid categories">
+        <article class="card">
+          <h3>इलेक्ट्रॉनिक्स</h3>
+          <p>स्मार्टफोन, लैपटॉप, गैजेट्स</p>
+        </article>
+        <article class="card">
+          <h3>फैशन</h3>
+          <p>स्टाइलिश कपड़े और एक्सेसरीज</p>
+        </article>
+        <article class="card">
+          <h3>होम & लिविंग</h3>
+          <p>डेकोर, किचन और फर्नीचर</p>
+        </article>
+        <article class="card">
+          <h3>ब्यूटी</h3>
+          <p>स्किनकेयर और मेकअप</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-title">
+        <h2>फीचर्ड प्रोडक्ट्स</h2>
+        <p>आज की बेस्ट सेलिंग आइटम्स चुनिए।</p>
+      </div>
+      <div class="grid products">
+        <article class="product-card">
+          <div class="badge">नया</div>
+          <h3>NoiseWave Earbuds</h3>
+          <p>क्लियर साउंड + 30H बैटरी</p>
+          <div class="price">₹2,499 <span>₹3,299</span></div>
+          <button class="primary-btn">कार्ट में जोड़ें</button>
+        </article>
+        <article class="product-card">
+          <div class="badge">बेस्ट सेलर</div>
+          <h3>AuraFit Smartwatch</h3>
+          <p>AMOLED डिस्प्ले + हेल्थ ट्रैकिंग</p>
+          <div class="price">₹4,999 <span>₹6,499</span></div>
+          <button class="primary-btn">कार्ट में जोड़ें</button>
+        </article>
+        <article class="product-card">
+          <div class="badge">ऑफर</div>
+          <h3>ZenComfort Sofa</h3>
+          <p>मॉडर्न डिजाइन + फ्री डिलीवरी</p>
+          <div class="price">₹19,999 <span>₹24,999</span></div>
+          <button class="primary-btn">कार्ट में जोड़ें</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section offer" id="offers">
+      <div>
+        <h2>स्मार्ट शॉपर्स के लिए एक्सक्लूसिव ऑफर</h2>
+        <p>
+          बैंक डिस्काउंट, फ्री शिपिंग और नए यूज़र्स के लिए अतिरिक्त 10% कैशबैक।
+        </p>
+        <button class="primary-btn">ऑफर देखें</button>
+      </div>
+      <div class="offer-list">
+        <div class="offer-item">
+          <h4>₹0 डिलीवरी</h4>
+          <p>₹499+ ऑर्डर पर फ्री शिपिंग</p>
+        </div>
+        <div class="offer-item">
+          <h4>सुरक्षित पेमेंट</h4>
+          <p>UPI, कार्ड और COD उपलब्ध</p>
+        </div>
+        <div class="offer-item">
+          <h4>आसान रिटर्न</h4>
+          <p>7 दिन में क्विक रिटर्न</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-title">
+        <h2>न्यूज़लेटर से जुड़ें</h2>
+        <p>लेटेस्ट डील्स और अपडेट सीधे आपके इनबॉक्स में।</p>
+      </div>
+      <form class="newsletter">
+        <input type="email" placeholder="आपका ईमेल" required />
+        <button class="primary-btn" type="submit">सब्सक्राइब करें</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>ShopNova</h3>
+      <p>आपका भरोसेमंद ऑनलाइन शॉपिंग पार्टनर।</p>
+    </div>
+    <div>
+      <h4>क्विक लिंक्स</h4>
+      <ul>
+        <li>FAQ</li>
+        <li>रिटर्न पॉलिसी</li>
+        <li>ट्रैक ऑर्डर</li>
+      </ul>
+    </div>
+    <div>
+      <h4>सपोर्ट</h4>
+      <ul>
+        <li>support@shopnova.in</li>
+        <li>+91 98765 43210</li>
+        <li>सोम-शनि: 9AM - 8PM</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
