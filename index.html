@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DesiCart | Ecommerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand">
+          <span class="logo">DC</span>
+          <div>
+            <h1>DesiCart</h1>
+            <p>Apke ghar tak premium shopping</p>
+          </div>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Search products, brands, categories" />
+          <button type="button">Search</button>
+        </div>
+        <div class="actions">
+          <button class="ghost">Login</button>
+          <button class="primary">
+            Cart
+            <span id="cartCount" class="badge">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="pill">New season • Fast delivery</p>
+          <h2>Har din ke liye stylish, smart, aur sustainable shopping</h2>
+          <p>
+            Fashion, gadgets, home essentials, aur curated deals — sab kuch ek hi jagah.
+            Free returns aur secure payments ke saath.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Shop Now</button>
+            <button class="outline">Explore Deals</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Today's Flash Sale</h3>
+          <p>Up to 60% off on electronics & lifestyle picks.</p>
+          <div class="timer" id="timer">Ends in 02:15:32</div>
+          <ul>
+            <li>Free delivery above ₹999</li>
+            <li>COD & UPI available</li>
+            <li>24x7 customer support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <div>
+          <h3>Why DesiCart?</h3>
+          <p>Trust, quality, aur quick delivery ke saath shopping experience.</p>
+        </div>
+        <div class="highlight-grid">
+          <article>
+            <h4>Curated Brands</h4>
+            <p>Top Indian & global brands ke latest collections.</p>
+          </article>
+          <article>
+            <h4>Secure Payments</h4>
+            <p>Razorpay, UPI, cards, netbanking — sab safe.</p>
+          </article>
+          <article>
+            <h4>Smart Delivery</h4>
+            <p>Metro cities me 24-hour delivery, rest India 2-4 days.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="section-header">
+          <h3>Featured Products</h3>
+          <div class="filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="fashion">Fashion</button>
+            <button class="chip" data-filter="electronics">Electronics</button>
+            <button class="chip" data-filter="home">Home</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product" data-category="fashion">
+            <div class="product-image">Sneakers</div>
+            <h4>AirFlex Runner</h4>
+            <p>Lightweight sneakers for daily hustle.</p>
+            <div class="price">
+              <span>₹2,499</span>
+              <button class="add" data-name="AirFlex Runner">Add to cart</button>
+            </div>
+          </article>
+          <article class="product" data-category="electronics">
+            <div class="product-image">Smartwatch</div>
+            <h4>Pulse Pro X</h4>
+            <p>Fitness + notifications with 7-day battery.</p>
+            <div class="price">
+              <span>₹3,999</span>
+              <button class="add" data-name="Pulse Pro X">Add to cart</button>
+            </div>
+          </article>
+          <article class="product" data-category="home">
+            <div class="product-image">Coffee Maker</div>
+            <h4>Morning Brew</h4>
+            <p>Fresh coffee in 3 minutes, every day.</p>
+            <div class="price">
+              <span>₹1,299</span>
+              <button class="add" data-name="Morning Brew">Add to cart</button>
+            </div>
+          </article>
+          <article class="product" data-category="fashion">
+            <div class="product-image">Backpack</div>
+            <h4>Metro Explorer</h4>
+            <p>Water-resistant, laptop friendly design.</p>
+            <div class="price">
+              <span>₹1,799</span>
+              <button class="add" data-name="Metro Explorer">Add to cart</button>
+            </div>
+          </article>
+          <article class="product" data-category="electronics">
+            <div class="product-image">Earbuds</div>
+            <h4>SoundPop Mini</h4>
+            <p>Noise isolation and quick charge support.</p>
+            <div class="price">
+              <span>₹2,199</span>
+              <button class="add" data-name="SoundPop Mini">Add to cart</button>
+            </div>
+          </article>
+          <article class="product" data-category="home">
+            <div class="product-image">Lamp</div>
+            <h4>GlowNest Lamp</h4>
+            <p>Warm light with adjustable brightness.</p>
+            <div class="price">
+              <span>₹899</span>
+              <button class="add" data-name="GlowNest Lamp">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h3>Become a DesiCart Insider</h3>
+          <p>Weekly deals, early access, aur exclusive coupons straight to your inbox.</p>
+        </div>
+        <form class="cta-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button class="primary" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h4>DesiCart</h4>
+        <p>India's friendly ecommerce destination.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <a href="#">Help Center</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h5>Policies</h5>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Shipping</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
